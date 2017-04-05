@@ -1,5 +1,5 @@
 class Player
-  attr_reader :name, :bankroll, :total_bets
+  attr_accessor :name, :bankroll, :total_bets
 
   def initialize(name)
     @name = name
