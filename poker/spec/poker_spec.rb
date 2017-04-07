@@ -223,10 +223,10 @@ describe Game do
     end
   end
 
-  describe '#next_turn' do
+  describe '#switch_player!' do
     it 'switches between players' do
       p1 = game.current_player
-      game.next_turn
+      game.switch_player!
       p2 = game.current_player
       expect(p1).to_not eq(p2)
     end
